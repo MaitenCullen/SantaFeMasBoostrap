@@ -3,19 +3,14 @@
     padding: 0;
 }
 body{
-    background-color: rgb(240, 235, 223);
+    background-color: white;
 }
 
 /* header */
-.blanquito{
-    background-color:white;
-}
+
 header{
     height:170px;
     background-color: white;
-    border-color:rgba(0, 84, 139,1);
-    border-bottom-style: inset;
-    border-width: 0px 0px 10px 0px;
     position:relative;
 }
 .logo{
@@ -27,7 +22,7 @@ h1{
     position: absolute;
     top: 20px;
     left: 20%;
-    color: rgb(39, 37, 148);
+    color: #5B48D9;
     font-family: 'Indie Flower', cursive;
 }
 .margenDiv{
@@ -37,7 +32,7 @@ h1{
 }
 .registro{
     position: absolute;
-    top: 140px;
+    top: 120px;
     right: 20px;
 }
 
@@ -71,7 +66,7 @@ main{
 
 a{
     font-style: oblique;
-    color: crimson;
+    color: #F20519;
     font-size: larger;
     text-decoration: none;
 }
@@ -163,7 +158,7 @@ p{
     text-align: center;
     font-family: 'Patrick Hand', cursive;
     font-size: 45px;
-    color: rgb(0 84 139);
+    color: #5B48D9;
 }
 
 .imgCentro{
@@ -179,15 +174,15 @@ p{
     display: inline-block;
 }
 .cards{
-    width:90%;
     display: flex;
     border-radius: 15px;
-    border: 5px solid rgb(248, 148,164);
+    border: 5px solid #04D9C4;
     align-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
     background-color:rgb(255, 255, 255);
+    padding: 1rem;
 }
 
 .tituloTabla{
@@ -196,7 +191,7 @@ p{
     font-weight: 200;
     font-family: 'Indie Flower';
     font-weight: bold;
-    color:red
+    color:#F20519
 }
 .estiloImg{
     width: 60%;
@@ -240,7 +235,7 @@ p{
     flex-direction: row-reverse;
     cursor: default;
     background-image: url(../img/SF3.png);
-    border-top:solid 5px rgb(255, 145, 146);
+    border-top:solid 5px #F20519;
 }
 .letritas{
     font-family: 'Patrick Hand', cursive;
@@ -299,9 +294,9 @@ p{
 }
 
 /* mapa capacitaciones */
-.info-capacitacion {
+/* .info-capacitacion {
     margin-top: 30px;
-}
+} */
 .info-capacitacion-texto {
     display: inline-block;
     padding: 15px;
@@ -310,7 +305,7 @@ p{
     vertical-align:top;
 }
 .mapa-capacitaciones{
-    display: inline-block;
+    display: flex;
     right: 0;
 }
 .capacitacion-derecha{
@@ -320,9 +315,10 @@ p{
     padding: 15px;
     display: inline-block;
 }
+.carrousel-imagenes{
+    display:flex;
+    justify-content: center;
 
-.capacitacion-derecha-contenido {
-    text-align: center;
 }
 .capacitacion-derecha-mapa-contenedor {
     margin-top: 30px;
@@ -393,4 +389,33 @@ margin: 15px;
     display: flex;
     width: 25%;
     text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    footer.footerClass{
+        display: none;
+    }
+    header{
+        display:flex;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 145px;
+    }
+    h1{
+        display:none;
+    }
+    .ingresar{
+        display: flex;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #04D9C4;
+        color:black;
+    }
+ .card-group{
+     display:none;
+ }
+ .mapa-capacitaciones{
+     display:none;
+ }
 }
