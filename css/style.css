@@ -35,6 +35,15 @@ h1{
     top: 120px;
     right: 20px;
 }
+.color_icono{
+    color: #5B48D9;
+}
+.color_icono_instagram{
+    color:rgb(233, 36, 118);
+}
+.color_icono_youtube{
+    color: #F20519;
+}
 
 /* body */
 
@@ -47,29 +56,36 @@ main{
     position: relative;
 }
 
+.elquecontiene_alosdos{
+    display: flex;
+}
 .lista{
     list-style-type: none;
     font-size: 25px;
     font-weight: bold;
 }
+.lista li:hover{
+    height: 70px; width: 70px;
+    color:#04D9C4;
+}
 .lista li{
-    position: relative;
-    display: inline-block;
+    display: flex;
     padding: 5px 5px;
     margin:1px 5px 1px 7px;
     font-family: 'Patrick Hand', cursive;
-    color:green;
+    color:rgb(233, 36, 118);
 }
 .lista a {
     color: red;
 }
 
-a{
+a {
     font-style: oblique;
     color: #F20519;
     font-size: larger;
     text-decoration: none;
 }
+
 .lista2{
     list-style-type: none;
     top: 0; 
@@ -173,7 +189,7 @@ p{
     width: 40%;
     display: inline-block;
 }
-.cards{
+.noticia{
     display: flex;
     border-radius: 15px;
     border: 5px solid #04D9C4;
@@ -181,8 +197,11 @@ p{
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
-    background-color:rgb(255, 255, 255);
     padding: 1rem;
+    background-image: linear-gradient(bottom, #04D9C4,white );
+}
+.meteorito_color{
+    color:gold;
 }
 
 .tituloTabla{
@@ -216,7 +235,8 @@ p{
 }
 .letraPatrick{
     font-family: 'Patrick Hand', cursive;
-}   
+} 
+
 
 
 .subMenu{
@@ -270,9 +290,7 @@ p{
     justify-content: space-between;
     width: 100%;
 }
-.cuerpoPadding{
-    padding: 5px;
-}
+
 /* quiero ser parte */
 .ser-parte{
     display: inline-block;
@@ -320,16 +338,7 @@ p{
     justify-content: center;
 
 }
-.capacitacion-derecha-mapa-contenedor {
-    margin-top: 30px;
-}
 
-.capacitacion-derecha-lista {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 30px;
-    margin-right: 30px;
-}
 .img-capacitaciones{
     margin:15px 5px 5px 10px;
     height: 170px;
@@ -418,4 +427,9 @@ margin: 15px;
  .mapa-capacitaciones{
      display:none;
  }
+}
+@media screen and (max-width: 900px){
+    .card-group{
+        display:none;
+    }
 }
