@@ -1,0 +1,25 @@
+.footerClass{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: row-reverse;
+    cursor: default;
+    background-image: url(../img/SF3.png);
+    border-top:solid 5px #F20519;
+}
+.letritas{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    color: white;
+    padding: 7px;
+}
+.estiloMapa{
+    width: 100%;
+    height: 100%;
+    padding-right: 5px;
+    margin:0 5px 5px 5px;
+}
+.divClass{
+    width: 100%;
+}

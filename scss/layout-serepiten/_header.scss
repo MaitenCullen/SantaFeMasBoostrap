@@ -1,0 +1,39 @@
+header{
+    height:170px;
+    background-color: white;
+    position:relative;
+
+    .logo{
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 0;
+    }
+    h1{
+        position: absolute;
+        top: 20px;
+        left: 20%;
+        color: #5B48D9;
+        font-family: 'Indie Flower', cursive;
+    }
+    .margenDiv{
+        position: absolute;
+        top: 25px;
+        right: 20px;;
+    }
+    .registro{
+        position: absolute;
+        top: 120px;
+        right: 20px;
+    }
+    .color_icono{
+        color: #5B48D9;
+    }
+    .color_icono_instagram{
+        color:rgb(233, 36, 118);
+    }
+    .color_icono_youtube{
+        color: #F20519;
+    }
+    
+}
+

@@ -1,0 +1,155 @@
+@import "./variables";
+@import "../scss/layout-serepiten/header";
+@import "../scss/layout-serepiten/footer";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $color-blanco;
+}
+
+
+/* MAIN */
+main{
+ position: relative;
+}
+
+.barraNavegar{
+    position: relative;
+}
+
+.elquecontiene_alosdos{
+    display: flex;
+}
+.lista-capacitaciones{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+    li {
+        &:hover { 
+            height: 70px; width: 70px;
+            color:$color-verde;
+        }
+    }
+}
+
+
+a {
+    font-style: oblique;
+    color: $color-rojo;
+    font-size: larger;
+    text-decoration: none;
+}
+
+
+
+.section-principal {
+    display: flex;
+}
+
+
+.centro{
+    text-align: center;
+    padding: 20px;
+}
+
+
+p{
+    text-align: justify;
+    font-size:20px;
+    font-family: $letra-Varela;
+}
+.pCentro{
+    text-align: center;
+    font-family: $letra-Patrick;
+    font-size: 45px;
+    color: $color-violeta;
+}
+
+.imgCentro{
+    border:5px ridge $color-violeta;
+    border-radius: 9px;
+    margin: 10px;
+}
+
+/* tableronoticias */
+
+.noticia{
+    display: flex;
+    border-radius: 15px;
+    border: 5px solid #04D9C4;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 1rem;
+    background-image: linear-gradient(bottom, #04D9C4,white );
+}
+.meteorito_color{
+    color:gold;
+}
+
+.tituloTabla{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 200;
+    font-family: $letra-family;
+    font-weight: bold;
+    color:#F20519
+}
+.estiloImg{
+    width: 60%;
+    margin: 15px 10px;
+}
+.estiloNoticias{
+    text-align: center;
+}
+ /* letras */
+
+.ingresar{
+    color:red;
+    font-size: 25px;
+   font-weight: lighter;
+}
+
+.mapa-capacitaciones{
+    display: flex;
+    right: 0;
+}
+
+@media screen and (max-width: 768px){
+    footer.footerClass{
+        display: none;
+    }
+    header{
+        display:flex;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 145px;
+    }
+    h1{
+        display:none;
+    }
+    .ingresar{
+        display: flex;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: $color-verde;
+        color:black;
+    }
+ .card-group{
+     display:none;
+ }
+ .mapa-capacitaciones{
+     display:none;
+ }
+}
+@media screen and (max-width: 900px){
+    .card-group{
+        display:none;
+    }
+}
