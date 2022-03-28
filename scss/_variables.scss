@@ -58,7 +58,7 @@ $noticias_cards: (
 @each $item, $tonalidad in $noticias_cards{
    .#{$item} {
        border: $tonalidad;
-       & :hover {
+       &:hover {
         @extend %sombra;
           }
    }
