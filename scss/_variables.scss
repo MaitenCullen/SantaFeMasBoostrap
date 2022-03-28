@@ -5,9 +5,73 @@ $color-rojo:red;
 $color-verde-Boton:#7cd2b0;
 $color-meteorito:gold;
 $color-rosado:rgb(248, 148,164);
-$color-icono-instagram:#e92476;
-$color-icono-youtube: #F20519;
+// $color-icono-instagram:#e92476;
+// $color-icono-youtube: #F20519;
+// $color-icono-facebook: #5B48D9;
 
 $letra-family:'Indie Flower', cursive;
 $letra-Varela:'Varela Round', sans-serif;
 $letra-Patrick:'Patrick Hand', cursive;
+// colores cards talleres
+$gray-darker:               #444444;
+$gray-dark:                 #696969;
+$gray:                      #999999;
+$gray-light:                #cccccc;
+$gray-lighter:              #ececec;
+$gray-lightest:             lighten($gray-lighter,70%);
+
+$carousel-control-width:15%;
+$carousel-caption-width:30%;
+/* mixing */
+@mixin flex ($display, $horizontal, $contenido) {
+    display: $display;
+    justify-content: $horizontal;
+    align-items: $contenido;
+}
+/* extend */
+%sombra{
+ box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+%borde {
+    border:3px solid $color-verde;
+    background-color: $color-rosado;
+}
+
+/* maps */
+$colores : (
+    $color-verde-Boton:#7cd2b0,
+    $color-meteorito:gold,
+);
+
+$colores-2 : (
+    $color-verde-Boton: red,
+    $color-meteorito:blue,
+);
+
+$noticias_cards: (
+        verde: 5px solid #7cd2b0,
+        rosado: 5px solid rgb(248, 148,164),
+        azul: 5px solid rgb(161, 194, 255),
+);
+
+@each $item, $tonalidad in $noticias_cards{
+   .#{$item} {
+       border: $tonalidad;
+       & :hover {
+        @extend %sombra;
+          }
+   }
+}
+
+$colores_iconos:(
+        facebook: #5B48D9,
+        instagram: #e92476,
+        youtube: #F20519,
+);
+
+@each $item, $tonalidad in $colores_iconos{
+   .#{$item} {
+      color: $tonalidad;
+   }
+}
