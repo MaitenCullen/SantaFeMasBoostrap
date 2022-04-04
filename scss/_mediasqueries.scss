@@ -1,0 +1,85 @@
+
+@media screen and (max-width: 768px){
+    footer.footerClass{
+        display: none;
+    }
+    header{
+        display:flex;
+        justify-content: space-between;
+    }
+    .logo {
+        display:none;
+    }
+    
+    .ingresar{
+        display: flex;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: $color-verde-Boton;
+        color:black;
+    }
+    article{
+        display:none;
+    }
+
+    .card-group{
+        display:none;
+    }
+    .mapa-capacitaciones{
+        display:none;
+    }
+    .card-group{
+        display:none;
+    }
+}
+
+
+.cards__item {
+    display: flex;
+    padding: 1rem;
+    @media(min-width: 40rem) {
+      width: 50%;
+    }
+    @media(min-width: 56rem) {
+      width: 33.3333%;
+    }
+  }
+
+.blog-card{
+    @media (min-width: 640px) {
+        flex-direction: row;
+        max-width: 700px;
+        .meta {
+          flex-basis: 40%;
+          height: auto;
+        }
+        .description {
+          flex-basis: 60%;
+          &:before {
+            transform: skewX(-3deg);
+            content: "";
+            background: #fff;
+            width: 30px;
+            position: absolute;
+            left: -10px;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+          }
+        }
+        &.alt {
+          flex-direction: row-reverse;
+          .description {
+            &:before {
+              left: inherit;
+              right: -10px;
+              transform: skew(3deg)
+            }
+          }
+          .details {
+            padding-left: 25px;
+          }
+        }
+      }
+}
