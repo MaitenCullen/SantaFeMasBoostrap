@@ -1,6 +1,6 @@
 header{
     height:170px;
-    background-color: #c8c5da;
+    background-color: $azul-header;
     position:relative;
     #f4f481
     .logo{
@@ -12,7 +12,7 @@ header{
         position: absolute;
         top: 20px;
         left: 20%;
-        color: #5B48D9;
+        color: black;
         font-family: 'Indie Flower', cursive;
     }
     .margenDiv{

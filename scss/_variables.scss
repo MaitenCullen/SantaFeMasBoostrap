@@ -2,15 +2,17 @@
 $color-blanco:white;
 $color-violeta:#5B48D9;
 $color-verde:#04D9C4;
-$color-rojo:red;
+$color-rojo:#f84239;
 $color-verde-Boton:#7cd2b0; 
 $color-meteorito:gold;
 $color-rosado:rgb(248, 148,164);
 $color_white: #fff;
-$color_prime: #5ad67d;
 $color_grey: #e2e2e2;
 $color_grey_dark: #a2a2a2;
 $color-violeta-nav:rgb(139, 160, 228);
+$color-nav-bar:#c54b47;
+$azul-header:#00548b;
+$color-celeste-logo:#577db6;
 
 // colores cards talleres
 $gray-darker:               #444444;
@@ -21,9 +23,11 @@ $gray-lighter:              #ececec;
 $gray-lightest:             lighten($gray-lighter,70%);
 
 //letras
-$letra-family:'Indie Flower', cursive;
-$letra-Varela:'Varela Round', sans-serif;
+
 $letra-Patrick:'Patrick Hand', cursive;
+$letra-patrick-2: 'Patrick Hand SC', cursive;
+$letra-nunito:'Nunito', sans-serif;
+$letra-nunito-sans:'Nunito Sans', sans-serif;
 
 
 $carousel-control-width:15%;
@@ -75,9 +79,9 @@ $noticias_cards: (
 }
 
 $colores_iconos:(
-        facebook: #5B48D9,
-        instagram: #e92476,
-        youtube: #F20519,
+        facebook: #6794ff,
+        instagram: #ed4289,
+        youtube: #f9471a,
 );
 
 @each $item, $tonalidad in $colores_iconos{
